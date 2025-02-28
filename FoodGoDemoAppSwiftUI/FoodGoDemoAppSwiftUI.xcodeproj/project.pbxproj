@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D879AE962D726554009CE4A0 /* CurvedTabBarShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D879AE952D726554009CE4A0 /* CurvedTabBarShape.swift */; };
+		D879AE982D7265A7009CE4A0 /* TabBarButtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D879AE972D7265A7009CE4A0 /* TabBarButtom.swift */; };
+		D8DE1EB32D6E3668007FC5AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8DE1EAD2D6E3668007FC5AC /* Preview Assets.xcassets */; };
+		D8DE1EB42D6E3668007FC5AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8DE1EAF2D6E3668007FC5AC /* Assets.xcassets */; };
+		D8DE1EB52D6E3668007FC5AC /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE1EB02D6E3668007FC5AC /* SplashView.swift */; };
+		D8DE1EB62D6E3668007FC5AC /* FoodGoDemoAppSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DE1EB12D6E3668007FC5AC /* FoodGoDemoAppSwiftUIApp.swift */; };
+		D8DE1EBC2D6E36F4007FC5AC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8DE1EBB2D6E36F4007FC5AC /* Colors.xcassets */; };
+		D8DE1EC72D6F920C007FC5AC /* Lobster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8DE1EC62D6F920C007FC5AC /* Lobster-Regular.ttf */; };
+		D8E285572D6FA416009A66DE /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E285562D6FA416009A66DE /* Strings.swift */; };
+		D8E285592D6FA850009A66DE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E285582D6FA850009A66DE /* HomeView.swift */; };
+		D8E2855B2D70D184009A66DE /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E2855A2D70D184009A66DE /* TabbarView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D879AE952D726554009CE4A0 /* CurvedTabBarShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedTabBarShape.swift; sourceTree = "<group>"; };
+		D879AE972D7265A7009CE4A0 /* TabBarButtom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButtom.swift; sourceTree = "<group>"; };
+		D8DE1E9C2D6E365D007FC5AC /* FoodGoDemoAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodGoDemoAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8DE1EAD2D6E3668007FC5AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D8DE1EAF2D6E3668007FC5AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8DE1EB02D6E3668007FC5AC /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		D8DE1EB12D6E3668007FC5AC /* FoodGoDemoAppSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodGoDemoAppSwiftUIApp.swift; sourceTree = "<group>"; };
+		D8DE1EBB2D6E36F4007FC5AC /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		D8DE1EC12D6F7A7A007FC5AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D8DE1EC62D6F920C007FC5AC /* Lobster-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lobster-Regular.ttf"; sourceTree = "<group>"; };
+		D8E285562D6FA416009A66DE /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		D8E285582D6FA850009A66DE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D8E2855A2D70D184009A66DE /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8DE1E992D6E365D007FC5AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D879AE942D72651A009CE4A0 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				D8E2855A2D70D184009A66DE /* TabbarView.swift */,
+				D879AE972D7265A7009CE4A0 /* TabBarButtom.swift */,
+				D879AE952D726554009CE4A0 /* CurvedTabBarShape.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		D879AE992D726611009CE4A0 /* SplashView */ = {
+			isa = PBXGroup;
+			children = (
+				D8DE1EB02D6E3668007FC5AC /* SplashView.swift */,
+			);
+			path = SplashView;
+			sourceTree = "<group>";
+		};
+		D879AE9A2D72661E009CE4A0 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				D8E285582D6FA850009A66DE /* HomeView.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		D8DE1E932D6E365D007FC5AC = {
+			isa = PBXGroup;
+			children = (
+				D8DE1EB22D6E3668007FC5AC /* FoodGoDemoAppSwiftUI */,
+				D8DE1E9D2D6E365D007FC5AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8DE1E9D2D6E365D007FC5AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8DE1E9C2D6E365D007FC5AC /* FoodGoDemoAppSwiftUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8DE1EAE2D6E3668007FC5AC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D8DE1EAD2D6E3668007FC5AC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D8DE1EB22D6E3668007FC5AC /* FoodGoDemoAppSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				D8DE1EC12D6F7A7A007FC5AC /* Info.plist */,
+				D8DE1EAE2D6E3668007FC5AC /* Preview Content */,
+				D8DE1EB72D6E3681007FC5AC /* Application */,
+				D8DE1EB82D6E36A6007FC5AC /* Resources */,
+				D8E285552D6FA3EF009A66DE /* Utilities */,
+				D8DE1EBD2D6E372D007FC5AC /* Views */,
+			);
+			path = FoodGoDemoAppSwiftUI;
+			sourceTree = "<group>";
+		};
+		D8DE1EB72D6E3681007FC5AC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D8DE1EB12D6E3668007FC5AC /* FoodGoDemoAppSwiftUIApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D8DE1EB82D6E36A6007FC5AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D8DE1EC52D6F91E5007FC5AC /* Fonts */,
+				D8DE1EC42D6F91DF007FC5AC /* Colors */,
+				D8DE1EC22D6F91CB007FC5AC /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D8DE1EBD2D6E372D007FC5AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D879AE992D726611009CE4A0 /* SplashView */,
+				D879AE942D72651A009CE4A0 /* Tabbar */,
+				D879AE9A2D72661E009CE4A0 /* HomeView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D8DE1EC22D6F91CB007FC5AC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D8DE1EAF2D6E3668007FC5AC /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		D8DE1EC42D6F91DF007FC5AC /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				D8DE1EBB2D6E36F4007FC5AC /* Colors.xcassets */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		D8DE1EC52D6F91E5007FC5AC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D8DE1EC62D6F920C007FC5AC /* Lobster-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D8E285552D6FA3EF009A66DE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D8E285562D6FA416009A66DE /* Strings.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8DE1E9B2D6E365D007FC5AC /* FoodGoDemoAppSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8DE1EAA2D6E3660007FC5AC /* Build configuration list for PBXNativeTarget "FoodGoDemoAppSwiftUI" */;
+			buildPhases = (
+				D8DE1E982D6E365D007FC5AC /* Sources */,
+				D8DE1E992D6E365D007FC5AC /* Frameworks */,
+				D8DE1E9A2D6E365D007FC5AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoodGoDemoAppSwiftUI;
+			packageProductDependencies = (
+			);
+			productName = FoodGoDemoAppSwiftUI;
+			productReference = D8DE1E9C2D6E365D007FC5AC /* FoodGoDemoAppSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8DE1E942D6E365D007FC5AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					D8DE1E9B2D6E365D007FC5AC = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = D8DE1E972D6E365D007FC5AC /* Build configuration list for PBXProject "FoodGoDemoAppSwiftUI" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8DE1E932D6E365D007FC5AC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D8DE1E9D2D6E365D007FC5AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8DE1E9B2D6E365D007FC5AC /* FoodGoDemoAppSwiftUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8DE1E9A2D6E365D007FC5AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8DE1EC72D6F920C007FC5AC /* Lobster-Regular.ttf in Resources */,
+				D8DE1EBC2D6E36F4007FC5AC /* Colors.xcassets in Resources */,
+				D8DE1EB32D6E3668007FC5AC /* Preview Assets.xcassets in Resources */,
+				D8DE1EB42D6E3668007FC5AC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8DE1E982D6E365D007FC5AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8DE1EB52D6E3668007FC5AC /* SplashView.swift in Sources */,
+				D8E285592D6FA850009A66DE /* HomeView.swift in Sources */,
+				D8E285572D6FA416009A66DE /* Strings.swift in Sources */,
+				D8E2855B2D70D184009A66DE /* TabbarView.swift in Sources */,
+				D8DE1EB62D6E3668007FC5AC /* FoodGoDemoAppSwiftUIApp.swift in Sources */,
+				D879AE962D726554009CE4A0 /* CurvedTabBarShape.swift in Sources */,
+				D879AE982D7265A7009CE4A0 /* TabBarButtom.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D8DE1EA82D6E3660007FC5AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D8DE1EA92D6E3660007FC5AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8DE1EAB2D6E3660007FC5AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FoodGoDemoAppSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodGoDemoAppSwiftUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FoodGo;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foodGoDemoAppSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8DE1EAC2D6E3660007FC5AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FoodGoDemoAppSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodGoDemoAppSwiftUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FoodGo;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foodGoDemoAppSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8DE1E972D6E365D007FC5AC /* Build configuration list for PBXProject "FoodGoDemoAppSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8DE1EA82D6E3660007FC5AC /* Debug */,
+				D8DE1EA92D6E3660007FC5AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8DE1EAA2D6E3660007FC5AC /* Build configuration list for PBXNativeTarget "FoodGoDemoAppSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8DE1EAB2D6E3660007FC5AC /* Debug */,
+				D8DE1EAC2D6E3660007FC5AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8DE1E942D6E365D007FC5AC /* Project object */;
+}
