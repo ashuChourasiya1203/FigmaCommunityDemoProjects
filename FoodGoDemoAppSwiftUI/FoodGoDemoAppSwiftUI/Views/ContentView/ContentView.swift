@@ -39,53 +39,14 @@ struct ContentView: View {
     
     private func showSelectedView(for selectedTab: Int) -> some View {
         switch selectedTab {
-        case 1: 
-        }
-        if selectedTab == 1 {
-            return AnyView(ProfileView())
-        } else if selectedTab == 2 {
-            return AnyView(NewsView())
-        } else if selectedTab == 3 {
-            return AnyView(FavoritesView())
-        } else {
-            return AnyView(HomeView())
+        case 1: return AnyView(ProfileView())
+        case 2: return AnyView(ChatView())
+        case 3: return AnyView(FavoriteItemView())
+        default: return AnyView(HomeView())
         }
     }
 }
 
 #Preview {
     ContentView()
-}
-
-
-struct HomeView: View {
-    var body: some View {
-        Text("Home View")
-            .font(.largeTitle)
-            .offset(y: -50)
-    }
-}
-
-struct ProfileView: View {
-    var body: some View {
-        Text("Profile View")
-            .font(.largeTitle)
-            .offset(y: -50)
-    }
-}
-
-struct NewsView: View {
-    var body: some View {
-        Text("Comments View")
-            .font(.largeTitle)
-            .offset(y: -50)
-    }
-}
-
-struct FavoritesView: View {
-    var body: some View {
-        Text("Favorites View")
-            .font(.largeTitle)
-            .offset(y: -50)
-    }
 }

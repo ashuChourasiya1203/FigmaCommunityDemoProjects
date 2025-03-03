@@ -27,7 +27,7 @@ struct TabbarView: View {
                     }
                     .buttonStyle(PlainButtonStyle())
                     .position(x: UIScreen.main.bounds.width/2, y: -15)
-                    .shadow(color: .black.opacity(0.3), radius: 10)
+                    .shadow(color: .black.opacity(0.3), radius: 15)
                     
                     CurvedTabBarShape()
                         .fill(.themeRed)

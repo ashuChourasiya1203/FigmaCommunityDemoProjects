@@ -14,6 +14,10 @@
 		D802FF502D73A04700A0A4DA /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D802FF482D73A04700A0A4DA /* Poppins-Black.ttf */; };
 		D802FF512D73A04700A0A4DA /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D802FF492D73A04700A0A4DA /* Poppins-Bold.ttf */; };
 		D856D25C2D7631B60086A91B /* FavoriteItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D856D25B2D7631B60086A91B /* FavoriteItemView.swift */; };
+		D856D25E2D7647A10086A91B /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D856D25D2D76479D0086A91B /* MockData.swift */; };
+		D856D2602D7648A60086A91B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D856D25F2D7648A20086A91B /* ProfileView.swift */; };
+		D856D2622D7648E30086A91B /* FoodItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D856D2612D7648DE0086A91B /* FoodItemView.swift */; };
+		D856D26B2D7652B80086A91B /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D856D26A2D7652B80086A91B /* ChatView.swift */; };
 		D879AE962D726554009CE4A0 /* CurvedTabBarShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D879AE952D726554009CE4A0 /* CurvedTabBarShape.swift */; };
 		D879AE982D7265A7009CE4A0 /* TabBarButtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D879AE972D7265A7009CE4A0 /* TabBarButtom.swift */; };
 		D8DE1EB32D6E3668007FC5AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8DE1EAD2D6E3668007FC5AC /* Preview Assets.xcassets */; };
@@ -35,6 +39,10 @@
 		D802FF4B2D73A04700A0A4DA /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		D802FF4C2D73A04700A0A4DA /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		D856D25B2D7631B60086A91B /* FavoriteItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteItemView.swift; sourceTree = "<group>"; };
+		D856D25D2D76479D0086A91B /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		D856D25F2D7648A20086A91B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		D856D2612D7648DE0086A91B /* FoodItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemView.swift; sourceTree = "<group>"; };
+		D856D26A2D7652B80086A91B /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		D879AE952D726554009CE4A0 /* CurvedTabBarShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedTabBarShape.swift; sourceTree = "<group>"; };
 		D879AE972D7265A7009CE4A0 /* TabBarButtom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButtom.swift; sourceTree = "<group>"; };
 		D8DE1E9C2D6E365D007FC5AC /* FoodGoDemoAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodGoDemoAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,12 +89,56 @@
 			path = Poppins;
 			sourceTree = "<group>";
 		};
-		D879AE942D72651A009CE4A0 /* Tabbar */ = {
+		D856D2642D7650B90086A91B /* SplashView */ = {
+			isa = PBXGroup;
+			children = (
+				D8DE1EB02D6E3668007FC5AC /* SplashView.swift */,
+			);
+			path = SplashView;
+			sourceTree = "<group>";
+		};
+		D856D2652D7650C50086A91B /* FoodItemView */ = {
+			isa = PBXGroup;
+			children = (
+				D856D2612D7648DE0086A91B /* FoodItemView.swift */,
+			);
+			path = FoodItemView;
+			sourceTree = "<group>";
+		};
+		D856D2662D7650DC0086A91B /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				D8E285582D6FA850009A66DE /* ContentView.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		D856D2672D7650E40086A91B /* TabbarItems */ = {
 			isa = PBXGroup;
 			children = (
 				D8E2855A2D70D184009A66DE /* TabbarView.swift */,
 				D879AE972D7265A7009CE4A0 /* TabBarButtom.swift */,
 				D879AE952D726554009CE4A0 /* CurvedTabBarShape.swift */,
+			);
+			path = TabbarItems;
+			sourceTree = "<group>";
+		};
+		D856D2682D7650F50086A91B /* TabbarViews */ = {
+			isa = PBXGroup;
+			children = (
+				D802FF442D7398C600A0A4DA /* HomeView.swift */,
+				D856D25F2D7648A20086A91B /* ProfileView.swift */,
+				D856D25B2D7631B60086A91B /* FavoriteItemView.swift */,
+				D856D26A2D7652B80086A91B /* ChatView.swift */,
+			);
+			path = TabbarViews;
+			sourceTree = "<group>";
+		};
+		D879AE942D72651A009CE4A0 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				D856D2672D7650E40086A91B /* TabbarItems */,
+				D856D2682D7650F50086A91B /* TabbarViews */,
 			);
 			path = Tabbar;
 			sourceTree = "<group>";
@@ -149,11 +201,10 @@
 		D8DE1EBD2D6E372D007FC5AC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D856D2652D7650C50086A91B /* FoodItemView */,
+				D856D2642D7650B90086A91B /* SplashView */,
+				D856D2662D7650DC0086A91B /* ContentView */,
 				D879AE942D72651A009CE4A0 /* Tabbar */,
-				D8DE1EB02D6E3668007FC5AC /* SplashView.swift */,
-				D8E285582D6FA850009A66DE /* ContentView.swift */,
-				D802FF442D7398C600A0A4DA /* HomeView.swift */,
-				D856D25B2D7631B60086A91B /* FavoriteItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				D8E285562D6FA416009A66DE /* Strings.swift */,
+				D856D25D2D76479D0086A91B /* MockData.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -298,12 +350,16 @@
 				D8DE1EB52D6E3668007FC5AC /* SplashView.swift in Sources */,
 				D8E285592D6FA850009A66DE /* ContentView.swift in Sources */,
 				D856D25C2D7631B60086A91B /* FavoriteItemView.swift in Sources */,
+				D856D2622D7648E30086A91B /* FoodItemView.swift in Sources */,
 				D8E285572D6FA416009A66DE /* Strings.swift in Sources */,
 				D8E2855B2D70D184009A66DE /* TabbarView.swift in Sources */,
+				D856D26B2D7652B80086A91B /* ChatView.swift in Sources */,
 				D8DE1EB62D6E3668007FC5AC /* FoodGoDemoAppSwiftUIApp.swift in Sources */,
 				D802FF452D7398C600A0A4DA /* HomeView.swift in Sources */,
 				D879AE962D726554009CE4A0 /* CurvedTabBarShape.swift in Sources */,
 				D879AE982D7265A7009CE4A0 /* TabBarButtom.swift in Sources */,
+				D856D2602D7648A60086A91B /* ProfileView.swift in Sources */,
+				D856D25E2D7647A10086A91B /* MockData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

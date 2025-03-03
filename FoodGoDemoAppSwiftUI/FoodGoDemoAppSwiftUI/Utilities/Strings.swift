@@ -18,5 +18,6 @@ enum CustomFont: String, CaseIterable {
 
 struct StringValue {
     static let foodgo = "Foodgo"
+    static let search = "Search"
     static let orderYourFavrouriteFood = "Order your favourite food!"
 }
