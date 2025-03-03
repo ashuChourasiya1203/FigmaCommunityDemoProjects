@@ -13,6 +13,7 @@
 		D802FF4F2D73A04700A0A4DA /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D802FF4B2D73A04700A0A4DA /* Poppins-Regular.ttf */; };
 		D802FF502D73A04700A0A4DA /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D802FF482D73A04700A0A4DA /* Poppins-Black.ttf */; };
 		D802FF512D73A04700A0A4DA /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D802FF492D73A04700A0A4DA /* Poppins-Bold.ttf */; };
+		D856D25C2D7631B60086A91B /* FavoriteItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D856D25B2D7631B60086A91B /* FavoriteItemView.swift */; };
 		D879AE962D726554009CE4A0 /* CurvedTabBarShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D879AE952D726554009CE4A0 /* CurvedTabBarShape.swift */; };
 		D879AE982D7265A7009CE4A0 /* TabBarButtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D879AE972D7265A7009CE4A0 /* TabBarButtom.swift */; };
 		D8DE1EB32D6E3668007FC5AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8DE1EAD2D6E3668007FC5AC /* Preview Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		D802FF4A2D73A04700A0A4DA /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		D802FF4B2D73A04700A0A4DA /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		D802FF4C2D73A04700A0A4DA /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		D856D25B2D7631B60086A91B /* FavoriteItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteItemView.swift; sourceTree = "<group>"; };
 		D879AE952D726554009CE4A0 /* CurvedTabBarShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedTabBarShape.swift; sourceTree = "<group>"; };
 		D879AE972D7265A7009CE4A0 /* TabBarButtom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButtom.swift; sourceTree = "<group>"; };
 		D8DE1E9C2D6E365D007FC5AC /* FoodGoDemoAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodGoDemoAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,14 +61,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D802FF432D7398AC00A0A4DA /* HomeView */ = {
-			isa = PBXGroup;
-			children = (
-				D802FF442D7398C600A0A4DA /* HomeView.swift */,
-			);
-			path = HomeView;
-			sourceTree = "<group>";
-		};
 		D802FF462D739FCD00A0A4DA /* Lobster */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,22 +89,6 @@
 				D879AE952D726554009CE4A0 /* CurvedTabBarShape.swift */,
 			);
 			path = Tabbar;
-			sourceTree = "<group>";
-		};
-		D879AE992D726611009CE4A0 /* SplashView */ = {
-			isa = PBXGroup;
-			children = (
-				D8DE1EB02D6E3668007FC5AC /* SplashView.swift */,
-			);
-			path = SplashView;
-			sourceTree = "<group>";
-		};
-		D879AE9A2D72661E009CE4A0 /* ContentView */ = {
-			isa = PBXGroup;
-			children = (
-				D8E285582D6FA850009A66DE /* ContentView.swift */,
-			);
-			path = ContentView;
 			sourceTree = "<group>";
 		};
 		D8DE1E932D6E365D007FC5AC = {
@@ -171,10 +149,11 @@
 		D8DE1EBD2D6E372D007FC5AC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D879AE992D726611009CE4A0 /* SplashView */,
 				D879AE942D72651A009CE4A0 /* Tabbar */,
-				D879AE9A2D72661E009CE4A0 /* ContentView */,
-				D802FF432D7398AC00A0A4DA /* HomeView */,
+				D8DE1EB02D6E3668007FC5AC /* SplashView.swift */,
+				D8E285582D6FA850009A66DE /* ContentView.swift */,
+				D802FF442D7398C600A0A4DA /* HomeView.swift */,
+				D856D25B2D7631B60086A91B /* FavoriteItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -219,7 +198,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8DE1EAA2D6E3660007FC5AC /* Build configuration list for PBXNativeTarget "FoodGoDemoAppSwiftUI" */;
 			buildPhases = (
-				FDFCE67E0DA3A2E34FDFA895 /* Build Framework Dependencies */,
+				E758193CF9D84BF9EADFA895 /* Link Bundle Resources */,
 				D8DE1E982D6E365D007FC5AC /* Sources */,
 				D8DE1E992D6E365D007FC5AC /* Frameworks */,
 				D8DE1E9A2D6E365D007FC5AC /* Resources */,
@@ -289,7 +268,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		FDFCE67E0DA3A2E34FDFA895 /* Build Framework Dependencies */ = {
+		E758193CF9D84BF9EADFA895 /* Link Bundle Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -299,7 +278,7 @@
 			);
 			inputPaths = (
 			);
-			name = "Build Framework Dependencies";
+			name = "Link Bundle Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -318,6 +297,7 @@
 			files = (
 				D8DE1EB52D6E3668007FC5AC /* SplashView.swift in Sources */,
 				D8E285592D6FA850009A66DE /* ContentView.swift in Sources */,
+				D856D25C2D7631B60086A91B /* FavoriteItemView.swift in Sources */,
 				D8E285572D6FA416009A66DE /* Strings.swift in Sources */,
 				D8E2855B2D70D184009A66DE /* TabbarView.swift in Sources */,
 				D8DE1EB62D6E3668007FC5AC /* FoodGoDemoAppSwiftUIApp.swift in Sources */,

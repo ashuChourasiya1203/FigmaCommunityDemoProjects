@@ -41,7 +41,7 @@ struct ContentView: View {
         switch selectedTab {
         case 1: return AnyView(ProfileView())
         case 2: return AnyView(NewsView())
-        case 3: return AnyView(FavoritesView())
+        case 3: return AnyView(FavoriteItemView())
         default: return AnyView(HomeView())
         }
     }
@@ -62,14 +62,6 @@ struct ProfileView: View {
 struct NewsView: View {
     var body: some View {
         Text("Comments View")
-            .font(.largeTitle)
-            .offset(y: -50)
-    }
-}
-
-struct FavoritesView: View {
-    var body: some View {
-        Text("Favorites View")
             .font(.largeTitle)
             .offset(y: -50)
     }

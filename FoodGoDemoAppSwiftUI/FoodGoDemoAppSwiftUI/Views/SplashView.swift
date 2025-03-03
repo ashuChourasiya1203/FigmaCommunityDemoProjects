@@ -35,6 +35,7 @@ struct SplashView: View {
                             .frame(width: 170, height: 200)
                             .offset(x: 70, y: 55)
                     }
+                    .shadow(color: .black.opacity(0.5), radius: 3, x: 0, y: 1)
                 }
             }
             .ignoresSafeArea()
