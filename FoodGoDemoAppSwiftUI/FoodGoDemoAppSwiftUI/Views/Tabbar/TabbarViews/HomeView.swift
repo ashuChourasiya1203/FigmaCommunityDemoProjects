@@ -21,6 +21,12 @@ struct HomeView: View {
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
                     ForEach(MockData.foodItems) { item in
                         FoodItemView(food: item)
+                            .contentShape(Rectangle()) // Makes the whole view tappable without default highlight
+                            .simultaneousGesture(
+                                LongPressGesture().onChanged { _ in
+                                    print("Long Press Triggered!")
+                                }
+                            )
                     }
                 }
                 .padding(.top, 5)
@@ -29,6 +35,7 @@ struct HomeView: View {
             }
             Spacer()
         }
+        .offset(y: -10)
     }
     
     private func HeaderView() -> some View {
@@ -93,7 +100,7 @@ struct HomeView: View {
             }
         }
         .padding(.horizontal, 15)
-        .padding(.top, 15)
+        .padding(.vertical, 5)
     }
     
     private struct CategoryView: View {
@@ -112,7 +119,6 @@ struct HomeView: View {
                 }
                 .padding(.horizontal)
             }
-            .padding(.vertical, 5)
         }
     }
 }

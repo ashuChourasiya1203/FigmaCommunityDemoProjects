@@ -2,14 +2,19 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIColorName</key>
+		<string>#EF2A39</string>
+	</dict>
 	<key>UIAppFonts</key>
 	<array>
-        <string>Lobster-Regular.ttf</string>
-        <string>Poppins-Regular.ttf</string>
-        <string>Poppins-Medium.ttf</string>
+		<string>Lobster-Regular.ttf</string>
+		<string>Poppins-Regular.ttf</string>
+		<string>Poppins-Medium.ttf</string>
 		<string>Poppins-SemiBold.ttf</string>
-        <string>Poppins-Bold.ttf</string>
-        <string>Poppins-Black.ttf</string>
+		<string>Poppins-Bold.ttf</string>
+		<string>Poppins-Black.ttf</string>
 	</array>
 </dict>
 </plist>

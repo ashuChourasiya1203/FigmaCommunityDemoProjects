@@ -14,6 +14,7 @@ struct FoodItem: Identifiable {
     var description: String
     var image: UIImage
     var rating: Double
+    var price: Double? = Double.random(in: 5.0...20.0)
 }
 
 struct MockData {

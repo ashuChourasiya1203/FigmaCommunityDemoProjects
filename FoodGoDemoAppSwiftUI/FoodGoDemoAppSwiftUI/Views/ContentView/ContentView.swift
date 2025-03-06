@@ -17,14 +17,16 @@ struct ContentView: View {
             if self.isShowSplash {
                 SplashView()
             } else {
-                ZStack {
-                    self.showSelectedView(for: self.selectedTab)
-                    VStack {
-                        Spacer()
-                        TabbarView(
-                            selectedTab: self.$selectedTab,
-                            isFloatingButtonClicked: self.$isFloatingButtonClicked
-                        )
+                NavigationStack {
+                    ZStack {
+                        self.showSelectedView(for: self.selectedTab)
+                        VStack {
+                            Spacer()
+                            TabbarView(
+                                selectedTab: self.$selectedTab,
+                                isFloatingButtonClicked: self.$isFloatingButtonClicked
+                            )
+                        }
                     }
                 }
             }
