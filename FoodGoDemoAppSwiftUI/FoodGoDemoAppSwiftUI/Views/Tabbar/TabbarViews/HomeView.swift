@@ -11,6 +11,7 @@ var FavFoods: [FoodItem] = []
 
 struct HomeView: View {
     @AppStorage("searchText") private var searchText: String = ""
+    @Binding var isShowUserDetailView: Bool
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -19,14 +20,8 @@ struct HomeView: View {
             CategoryView()
             ScrollView {
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
-                    ForEach(MockData.foodItems) { item in
-                        FoodItemView(food: item)
-                            .contentShape(Rectangle()) // Makes the whole view tappable without default highlight
-                            .simultaneousGesture(
-                                LongPressGesture().onChanged { _ in
-                                    print("Long Press Triggered!")
-                                }
-                            )
+                    ForEach(MockData.foodItems) { food in
+                        FoodItemView(food: food)
                     }
                 }
                 .padding(.top, 5)
@@ -36,6 +31,9 @@ struct HomeView: View {
             Spacer()
         }
         .offset(y: -10)
+        .onAppear {
+            self.isShowUserDetailView = false
+        }
     }
     
     private func HeaderView() -> some View {
@@ -53,9 +51,9 @@ struct HomeView: View {
             Spacer()
             
             Button {
-                //Show Profile View on click of this button
+                self.isShowUserDetailView = true
             } label: {
-                Image(.icAvatar)
+                Image(.icAvatar1)
                     .resizable()
                     .frame(width: 60, height: 60)
                     .clipShape(.rect(cornerRadius: 10))
@@ -63,6 +61,7 @@ struct HomeView: View {
             .buttonStyle(PlainButtonStyle())
         }
         .padding(.horizontal)
+        .padding(.top, 5)
     }
     
     private func SearchView() -> some View {
@@ -104,7 +103,7 @@ struct HomeView: View {
     }
     
     private struct CategoryView: View {
-        @State private var selectedCategory: String = "All"
+        @State private var selectedCategory = "All"
         private let categories = ["All", "Combos", "Sliders", "Classic", "Burgers"]
         
         var body: some View {
@@ -126,7 +125,7 @@ struct HomeView: View {
 // MARK: - Category Button Component
 struct CategoryButton: View {
     var title: String
-    var isSelected: Bool = false
+    var isSelected = false
     
     var body: some View {
         Text(self.title)
