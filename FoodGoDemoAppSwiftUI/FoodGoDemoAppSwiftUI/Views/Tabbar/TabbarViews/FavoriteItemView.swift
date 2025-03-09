@@ -16,15 +16,15 @@ struct FavoriteItemView: View {
                         FoodItemView(food: item)
                     }
                 }
-                .padding(.top, 10)
+                .padding(.top, 15)
                 .padding(.horizontal, 20)
-                .padding(.bottom, 110)
+                .padding(.bottom, 120)
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     Text("My Favorites ❤️")
-                        .font(.custom(CustomFont.lobsterRegular.rawValue, size: 32))
+                        .font(.custom(CustomFont.lobsterRegular.rawValue, size: 35))
                         .foregroundColor(.theme3C2F2F)
                 }
             }

@@ -36,15 +36,14 @@ struct UserProfileView: View {
             .navigationBarHidden(true)
         }
         .background(.green)
-        .ignoresSafeArea(edges: .bottom)
     }
     
     private func WhiteBackgroundView(size: CGSize) -> some View {
         RoundedRectangle(cornerRadius: 30)
             .fill(Color.white)
-            .frame(width: size.width, height: size.height * 0.9)
+            .frame(width: size.width, height: size.height * 0.85)
             .clipShape(RoundedCornerShape(radius: 25, corners: [.topLeft, .topRight]))
-            .offset(y: size.height * 0.1)
+            .offset(y: size.height * 0.15)
     }
 }
 
@@ -87,7 +86,7 @@ struct UserProfileContent: View {
             VStack(spacing: 20) {
                 CustomTextField(title: "Name", value: "Ashutosh Chourasiya")
                 CustomTextField(title: "Email", value: "ashutosh@gmail.com")
-                CustomTextField(title: "Delivery address", value: "123 Main St Apartment 4A, New York, NY, 123 Main St Apartment 4A, New York")
+                CustomTextField(title: "Delivery address", value: "123 Main St Apartment 4A, New York, NY")
                 CustomTextField(title: "Password", value: "•••••••••")
                 
                 Divider().frame(height: 15)
@@ -119,16 +118,19 @@ struct CustomTextField: View {
             )
         }
         .overlay {
-            HStack {
-                ZStack {
-                    Text(self.title)
-                        .font(.custom(CustomFont.poppinsMedium.rawValue, size: 15))
-                        .padding(.horizontal, 7)
-                        .foregroundStyle(.theme6A6A6A.opacity(0.8))
+            VStack {
+                HStack(alignment: .top) {
+                    ZStack {
+                        Text(self.title)
+                            .font(.custom(CustomFont.poppinsMedium.rawValue, size: 15))
+                            .padding(.horizontal, 7)
+                            .foregroundStyle(.theme6A6A6A.opacity(0.8))
+                    }
+                    .background(.white)
+                    .offset(x: 13, y: -10)
+                    
+                    Spacer()
                 }
-                .background(.blue)
-                .offset(x: 13, y: -27)
-                
                 Spacer()
             }
         }
@@ -140,7 +142,7 @@ struct MenuOption: View {
 
     var body: some View {
         HStack {
-            Text(self.title).font(.custom(CustomFont.poppinsRegular.rawValue, size: 16))
+            Text(self.title).font(.custom(CustomFont.poppinsMedium.rawValue, size: 16))
             Spacer()
             Image(systemName: "chevron.right")
         }
@@ -151,11 +153,13 @@ struct MenuOption: View {
 
 struct ProfileButtons: View {
     var body: some View {
-        HStack(spacing: 20) {
+        HStack(spacing: 15) {
             Button(action: {}) {
-                HStack {
+                HStack(spacing: 10) {
                     Text("Edit Profile")
-                    Image(systemName: "square.and.pencil")
+                    Image(.icEdit)
+                        .resizable()
+                        .frame(width: 22, height: 22)
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
@@ -165,23 +169,25 @@ struct ProfileButtons: View {
             }
 
             Button(action: {}) {
-                HStack {
+                HStack(spacing: 10) {
                     Text("Log out")
-                    Image(systemName: "arrow.right.to.line")
+                    Image(.icLogout)
+                        .resizable()
+                        .frame(width: 22, height: 22)
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
                 .overlay(
                     RoundedRectangle(cornerRadius: 15)
-                        .stroke(Color.themeRed, lineWidth: 2)
+                        .stroke(Color.themeRed, lineWidth: 3)
                 )
                 .foregroundColor(.themeRed)
             }
         }
-        .frame(height: 60)
-        .font(.custom(CustomFont.poppinsMedium.rawValue, size: 18))
-        .padding(.horizontal, 15)
-        .padding(.bottom, 15)
+        .frame(height: 70)
+        .font(.custom(CustomFont.poppinsSemiBold.rawValue, size: 18))
+        .padding(.horizontal, 20)
+        .buttonStyle(PlainButtonStyle())
     }
 }
 

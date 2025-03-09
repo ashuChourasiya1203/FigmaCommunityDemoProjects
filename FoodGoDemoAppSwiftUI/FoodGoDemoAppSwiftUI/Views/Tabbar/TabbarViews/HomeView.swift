@@ -17,8 +17,8 @@ struct HomeView: View {
         VStack(alignment: .leading) {
             HeaderView()
             SearchView()
-            CategoryView()
             ScrollView {
+                CategoryView()
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 20) {
                     ForEach(MockData.foodItems) { food in
                         FoodItemView(food: food)
@@ -55,7 +55,7 @@ struct HomeView: View {
             } label: {
                 Image(.icAvatar1)
                     .resizable()
-                    .frame(width: 60, height: 60)
+                    .frame(width: 57, height: 57)
                     .clipShape(.rect(cornerRadius: 10))
             }
             .buttonStyle(PlainButtonStyle())
@@ -97,6 +97,7 @@ struct HomeView: View {
                 .clipShape(.rect(cornerRadius: 20))
                 .frame(width: 60, height: 60)
             }
+            .buttonStyle(PlainButtonStyle())
         }
         .padding(.horizontal, 15)
         .padding(.vertical, 5)

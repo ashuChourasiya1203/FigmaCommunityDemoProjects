@@ -80,6 +80,7 @@ struct FoodItemView: View {
                 self.isSelected = FavFoods.contains { $0.id == self.food.id }
             }
         }
+        .buttonStyle(PlainButtonStyle())
     }
 }
 

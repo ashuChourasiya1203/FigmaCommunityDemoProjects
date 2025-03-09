@@ -53,7 +53,7 @@ struct TabbarView: View {
                         TabBarButton(image: .icHeart, isSelected: self.selectedTab == 3)
                             .onTapGesture { self.selectedTab = 3 }
                     }
-                    .padding(.horizontal, 30)
+                    .padding(.horizontal, 20)
                     .frame(height: 80)
                 }
                 .frame(height: 90)
